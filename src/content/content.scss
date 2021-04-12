@@ -1,0 +1,337 @@
+@use "@material/card";
+@use "@material/slider/styles";
+@use "@material/layout-grid/mdc-layout-grid";
+
+@include card.core-styles;
+
+$blue: #188ae2;
+$red: #ff5b5a;
+$green: #11c469;
+
+
+.main-content {
+    margin-right: 225px;
+}
+
+.mdc-card {
+    height: 105px;
+    border-radius: 0px;
+    padding: 15px 30px;
+}
+
+.mdc-card__primary-action:hover::before {
+    opacity: 0 !important;
+}
+
+.mdc-card__media-content {
+    position: relative;
+}
+
+.mdc-card__media--square::before {
+    margin-top: 0px;
+}
+
+.mdc-card__primary-action {
+    width: 100%;
+    height: 100%;
+}
+
+.mdc-card-blue {
+    background: $blue;
+}
+
+.mdc-card-red {
+    background: $red;
+}
+
+.mdc-card-green {
+    background: $green;
+}
+
+.progress {
+    height: 6px;
+    margin-top: 15px;
+    border-radius: 8px;
+    background: #42454c;
+
+    .track {
+        width: 80%;
+        height: 100%;
+        border-radius: 10px;
+        background: white;
+    }
+}
+
+.mdc-card__media-content {
+    position: relative;
+    font-family: 'Lato';
+    font-weight: 400;
+    color: white;
+}
+
+.count-cart {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    color: white;
+
+    .title {
+        font-size: 28px;
+    }
+    .sub-title {
+        font-size: 15px;
+        padding-bottom: 3px;
+        margin-left: 8px;
+        margin-top: auto;
+    }
+}
+
+.mdc-card:hover {
+    transition: 0.7s;
+    transform: scale(1.1);
+}
+
+.status-block {
+    padding: 30px;
+    background-color: #f2f5f8;
+    
+    .head {
+        display: flex;
+        .title{
+            margin-left: 0px;
+        }
+        .sub-title{
+            margin-top: 5px;
+            margin-left: 0px;
+        }
+    }
+
+    .title{
+        margin-left: 5px;
+        font-family: 'Lato'; 
+        font-weight: 600; 
+        font-size: 13px;
+    }
+    .sub-title{
+        margin-top: 5px;
+        margin-left: 5px;
+        font-family: 'Lato'; 
+        font-weight: 400; 
+        font-size: 12px;
+    }
+    .item {
+        margin-top: 15px;
+    }
+    .item div {
+        display: flex;
+        font-family: 'Lato' !important; 
+        font-size: 12px;
+
+        .number {
+            font-weight: 400 !important;
+        }
+        .title {
+            font-weight: 400 !important;
+        }
+        .sub-title {
+            font-weight: 400 !important;
+            margin: auto;
+            margin-right: 0px;
+        }
+        .track-blue {
+            background: $blue;
+        }
+        .track-red {
+            background: $red;
+        }        
+        .track-green {
+            background: $green;
+        }
+    }   
+    .chart-container {
+        position: relative;
+    
+        .doughnut-chart-text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, calc(-50% + 14px));
+            text-align: center;
+
+            .title {
+                font-size: 22px;
+                font-weight: 500;
+            }
+            .sub-title {
+                
+            }
+        }
+    }
+}
+
+.events {
+    margin-top: -25px;
+
+    .mdc-list {
+        width: 100%;
+    }
+
+    span {
+        color: black;
+        font-size: 14px;
+    }
+
+    .mdc-list-item {
+        color: white;
+        margin: 5px;
+        padding: 0px;
+        height: 35px;
+        border-bottom: 1px solid gray;
+    }
+
+    .count {
+        margin-left: auto;
+        padding: 0px 5px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+    .count-red {
+        background-color: $red;
+    }
+    
+    .count-green {
+        background-color: $green;
+    }
+}
+
+.weather {
+    display: grid;
+    margin-top: 30px; 
+    background-color: #1a8ae1; 
+    color: white; 
+    font-family: 'Lato';
+
+    .right-block {
+        margin-left: auto;
+        display: grid;
+
+        img {
+            margin-left: auto;
+        }
+
+        .title, .sub-title {
+            font-size: 17px;
+            font-weight: 400;
+            text-align: end;
+        }
+    }
+
+    .left-block {
+        margin-top: 40px;
+
+        .temperature {
+            font-size: 25px;
+            font-weight: 400;
+        }
+    }
+}
+
+.recent-comments {
+
+    font-family: 'Lato', sans-serif;
+
+    img {
+        height: 50px;
+        margin-right: 25px;
+        border-radius: 50%;
+    }
+
+    .mdc-list-item {
+        margin-top: 20px;
+        height: auto;
+        display: block;
+        padding-left: 0px;
+
+        div {
+            display: flex;
+        }
+    }
+
+    .text {
+        font-size: 14px;
+        font-family: 'Lato';
+        text-align: justify;
+    }
+
+    .date {
+        margin-left: auto;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 8px 20px;
+        border: none;
+        font-size: 14px;
+        color: white;
+        font-family: "Lato";
+        font-weight: 500;
+        margin-top: 16px;
+        border-radius: 20px;
+    }
+
+    .button-green {
+        background-color: $green;
+    }
+
+    .button-red {
+        background-color: $red;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .main-content {
+        margin-right: 0px !important;
+    }
+    .mdc-drawer.mdc-drawer--open:not(.mdc-drawer--closing) + .mdc-drawer-app-content {
+        margin-left: 0px !important;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    label.mdc-text-field.mdc-text-field--outlined.mdc-text-field--with-leading-icon.mdc-text-field--with-trailing-icon {
+        display: none;
+    }
+    .author {
+        display: none;
+    }
+    .burger-block {
+        height: 100%;
+        background: none;
+        width: max-content;
+        display: flex;
+
+        span {
+            display: none;
+        }
+    }
+    button.material-icons.mdc-top-app-bar__navigation-icon.mdc-icon-button.mdc-ripple-upgraded--unbounded.mdc-ripple-upgraded {
+        float: unset; 
+        top: 0px; 
+        right: 0;
+        left: 7px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #line-chart {
+        height: 200px !important;
+    }
+
+    .mdc-drawer--dismissible.mdc-drawer--open {
+        height: calc(100vh - 56px);
+        margin-top: 56px;
+        padding-top: 0px;
+    }
+}

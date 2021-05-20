@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>My-project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Playball|Open+Sans+Condensed:300,700" />
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+  <body>
+    <header class="mdc-top-app-bar app-bar" id="app-bar">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <div class="burger-block">
+            <span style="margin: auto; font-family: 'Lato', sans-serif; font-size: 18px;">Muslim Mahin</span>
+            <a href="#"><button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button></a>
+          </div>
+          <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon mdc-text-field--with-trailing-icon">
+            <span class="mdc-notched-outline">
+             <span class="mdc-notched-outline__leading"></span>
+              <span class="mdc-notched-outline__notch">
+                <span class="mdc-floating-label" id="my-label-id">Search</span>
+              </span>
+              <span class="mdc-notched-outline__trailing"></span>
+            </span>
+            <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+            <i class="material-icons mdc-text-field__icon mdc-text-field__icon--trailing" tabindex="0" role="button">search</i>
+          </label>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+          <div class="author">
+            <img class="author-img" src="/assets/muslim-img.jpg">
+            <div>
+              <h1 class="author-name">Muslim Mahin</h1>
+              <span class="role">Administration</span>
+            </div>
+          </div>
+          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite">notifications</button>
+          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Options"><div>settings</div></button>
+        </section>
+      </div>
+    </header>
+
+    <aside class="mdc-drawer mdc-drawer--dismissible mdc-top-app-bar--fixed-adjust">
+      <div class="mdc-drawer__content">
+        <div class="mdc-list">
+          <div class="accordion-menu col-menu">
+            <ul>
+              <li> 
+                <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
+                  <span class="mdc-list-item__ripple"></span>
+                  <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+                  <span class="mdc-list-item__text">Dashboard</span>
+                </a>
+                <ul>
+                  <li>
+                    <a class="mdc-list-item" href="#">
+                      <span class="mdc-list-item__text item">Mailbox</span>
+                    </a>
+                  </li> 
+                  <li>
+                    <a class="mdc-list-item" href="#">
+                      <span class="mdc-list-item__text item">Search</span>
+                    </a>
+                  </li> 
+                  <li>
+                    <a class="mdc-list-item" href="#">
+                      <span class="mdc-list-item__text item">To do List</span>
+                    </a>
+                  </li> 
+                </ul>
+              </li>    
+              <li>
+                <a class="mdc-list-item" href="#">
+                  <span class="mdc-list-item__ripple"></span>
+                  <i class="material-icons mdc-list-item__graphic" aria-hidden="true">apps</i>
+                  <span class="mdc-list-item__text">Apps</span>
+                </a>
+                <ul>
+                  <li>
+                    <a class="mdc-list-item" href="#">
+                      <span class="mdc-list-item__text item">Mailbox</span>
+                    </a>
+                  </li> 
+                  <li>
+                    <a class="mdc-list-item" href="#">
+                      <span class="mdc-list-item__text item">Search</span>
+                    </a>
+                  </li> 
+                  <li>
+                    <a class="mdc-list-item" href="#">
+                      <span class="mdc-list-item__text item">To do List</span>
+                    </a>
+                  </li> 
+                </ul>
+              </li>     
+              <li>
+                <a class="mdc-list-item" href="#">
+                  <span class="mdc-list-item__ripple"></span>
+                  <i class="material-icons mdc-list-item__graphic" aria-hidden="true">code</i>
+                  <span class="mdc-list-item__text">Components</span>
+                </a>
+                <ul>
+                  <li>
+                    <a class="mdc-list-item" href="#">
+                      <span class="mdc-list-item__text item">Mailbox</span>
+                    </a>
+                  </li> 
+                  <li>
+                    <a class="mdc-list-item" href="#">
+                      <span class="mdc-list-item__text item">Search</span>
+                    </a>
+                  </li> 
+                  <li>
+                    <a class="mdc-list-item" href="#">
+                      <span class="mdc-list-item__text item">To do List</span>
+                    </a>
+                  </li> 
+                </ul>
+              </li>    
+            </ul>
+          </div>
+          <div class="help-nav">
+            <a class="mdc-list-item" href="#">
+              <span class="mdc-list-item__ripple"></span>
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">help_outline</i>
+              <span class="mdc-list-item__text">Help & Support</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+  
+    <div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+      <main class="main-content" id="main-content" style="background-color: #edf0f5;">
+        <div>
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell">
+                <div class="mdc-card mdc-card-blue">
+                  <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square">
+                      <div class="mdc-card__media-content">USER STATUS</div>
+                      <div class="count-cart">
+                        <span class="title">5,100</span>
+                        <span class="sub-title">This Week</span>
+                      </div>
+                      <div class="progress">
+                          <div class="track"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell">
+                <div class="mdc-card mdc-card-red">
+                  <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square">
+                      <div class="mdc-card__media-content">SALES</div>
+                      <div class="count-cart">
+                        <span class="title">9,180</span>
+                        <span class="sub-title">This Month</span>
+                      </div>
+                      <div class="progress">
+                          <div class="track"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell">
+                <div class="mdc-card mdc-card-green">
+                  <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square">
+                      <div class="mdc-card__media-content">PAGE VIEWS</div>
+                      <div class="count-cart">
+                        <span class="title">91,230</span>
+                        <span class="sub-title">This Month</span>
+                      </div>
+                      <div class="progress">
+                          <div class="track"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell--span-7">
+                <div class="chart-container">
+                  <div style="margin-left: 5px;font-family: 'Lato'; font-weight: 600; font-size: 13px;">VISITORS</div>
+                  <canvas id="line-chart" style="margin-top: 20px; height: 400px !important; width: 100% !important;"></canvas>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell--span-5">
+                <div class="status-block events">
+                  <div style="margin-left: 5px;font-family: 'Lato'; font-weight: 600; font-size: 13px;">EVENTS</div>
+                  <ul class="mdc-list">
+                    <li class="mdc-list-item">
+                      <span>be reviews meetup</span>
+                      <div class="count count-green">29</div>
+                    </li>
+                    <li class="mdc-list-item">
+                      <span>Google meetup</span>
+                      <div class="count count-red">25</div>
+                    </li>
+                    <li class="mdc-list-item">
+                      <span  style="color: grey;">No More Event Shedule</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="status-block weather">
+                  <div class="card mx-auto mb-3 main-card">
+
+                    <!-- HEADER -->
+                    <h4 class="card-header">
+                      <span id="time-now"></span>
+                    </h4>
+            
+                    <!-- TODAYS DATA -->
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-7 text-center">
+                          <p id="desc-now"></p>
+                          <div class="row py-24 justify-content-center">
+                            <div class="col-auto pr-6">
+                              <i id="icon-now" class="wi wi-day-sunny"></i>
+                            </div>
+                            <div class="col-auto pl-6">
+                              <p id="temp-now"></p>
+                              <p id="celsius-now" class="degree degree-active">°C</p>
+                              <p class="degree mx-1">|</p>
+                              <p id="fahrenheit-now" class="degree degree-inactive">°F</p>
+                            </div>
+                          </div>
+                          <span id="city-now" class="city"></span>
+                        </div>
+                      <div class="disp">
+                        <div class="col-5 data-tables">
+                          <table class="text-center">
+                            <tr>
+                              <td><i class="wi wi-strong-wind p-6"></i></td>
+                              <td class="text-left">Wind: <span id="wind-now"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="wi wi-humidity p-6"></i></td>
+                              <td class="text-left">Humidity: <span id="humidity-now"></span> %</td>
+                            </tr>
+                            <tr class="spaceUnder">
+                              <td><i class="wi wi-cloudy p-6"></i></td>
+                              <td class="text-left">Cloudiness: <span id="cloudiness-now"></span> %</td>
+                            </tr>
+                            <tr>
+                              <td><i class="wi wi-sunrise p-6"></i></td>
+                              <td class="text-left">Sunrise: <span id="sunrise-now"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="wi wi-sunset p-6"></i></td>
+                              <td class="text-left">Sunset: <span id="sunset-now"></span></td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell--span-6 status-block">
+                <div class="head">
+                  <div>
+                    <div class="title">TOP 10 STORIES</div>
+                    <div class="sub-title">Best Saller Per Month</div>
+                  </div>
+                  <div style="margin: auto; margin-right: 0px;">
+                    <button>All stories</button>
+                  </div>
+                </div>
+                <div>
+                  <div class="item">
+                    <div>
+                      <span class="number">1.</span>
+                      <span class="title">Iphone 6</span>
+                      <span class="sub-title">195</span>
+                    </div>
+                    <div class="progress">
+                        <div class="track track-blue"></div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div>
+                      <span class="number">2.</span>
+                      <span class="title">IPhone 5</span>
+                      <span class="sub-title">355</span>
+                    </div>
+                    <div class="progress">
+                        <div class="track track-red"></div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div>
+                      <span class="number">3.</span>
+                      <span class="title">IPhone 7</span>
+                      <span class="sub-title">105</span>
+                    </div>
+                    <div class="progress">
+                        <div class="track track-green"></div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="mdc-layout-grid__cell--span-6 status-block">
+                <div class="chart-container">
+                  <div style="margin-left: 5px;font-family: 'Lato'; font-weight: 600; font-size: 13px;">ORDER STATS</div>
+                  <canvas id="doughnut-chart" style="height: 150px !important; margin-top: 20px; margin-left: auto; margin-right: auto;"></canvas>
+                  <div class="doughnut-chart-text">
+                    <span class="title">4,500</span><br>
+                    <span class="sub-title">Delivered</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mdc-layout-grid" style="padding-top: 0px;">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell--span-12 status-block">
+                <div style="margin-left: 5px;font-family: 'Lato'; font-weight: 600; font-size: 13px;">RECENT COMMENTS</div>
+                <ul class="mdc-list recent-comments">
+                  <li class="mdc-list-item">
+                    <div>
+                      <img src="assets/users-image/1.jpg">
+                      <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                    </div>
+                    <div>
+                      <button class="button button-green">Approved</button>
+                      <div class="date">August 14, 2021</div>
+                    </div>
+                  </li>
+                  <li class="mdc-list-item">
+                    <div>
+                      <img src="assets/users-image/3.jpg">
+                      <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                    </div>
+                    <div>
+                      <button class="button button-red">Approved</button>
+                      <div class="date">August 14, 2021</div>
+                    </div>
+                  </li>
+                  <li class="mdc-list-item">
+                    <div>
+                      <img src="assets/users-image/5.jpg">
+                      <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                    </div>
+                    <div>
+                      <button class="button button-green">Approved</button>
+                      <div class="date">August 14, 2021</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="align-right">
+      <div class="mdc-list-group">
+        <h3 class="mdc-list-group__subheader">NEW MESSAGE</h3>
+        <ul class="mdc-list">
+          <li class="mdc-list-item" tabindex="0">
+            <div class="message">
+              <img class="author-img" src="/assets/users-image/1.jpg">
+              <div>
+                <h1 class="author-name">John Partel</h1>
+                <span class="online">2 hours ago</span>
+              </div>
+            </div>
+          </li>
+          <li class="mdc-list-item">
+            <div class="message">
+              <img class="author-img" src="/assets/users-image/2.jpg">
+              <div>
+                <h1 class="author-name">John Partel</h1>
+                <span class="online">2 hours ago</span>
+              </div>
+            </div>
+          </li>
+          <li class="mdc-list-item">
+            <div class="message">
+              <img class="author-img" src="/assets/users-image/3.jpg">
+              <div>
+                <h1 class="author-name">John Partel</h1>
+                <span class="online">2 hours ago</span>
+              </div>
+            </div>
+          </li>
+          <li class="mdc-list-item">
+            <div class="message">
+              <img class="author-img" src="/assets/users-image/4.jpg">
+              <div>
+                <h1 class="author-name">John Partel</h1>
+                <span class="online">2 hours ago</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <h3 class="mdc-list-group__subheader">CHAT LINE</h3>
+        <ul class="mdc-list">
+          <li class="mdc-list-item">
+            <div class="message user-online">
+              <img class="author-img" src="/assets/users-image/5.jpg">
+              <div>
+                <h1 class="author-name">John Partel</h1>
+                <span class="message-text">Call My Latter..?</span>
+              </div>
+            </div>
+          </li>
+          <li class="mdc-list-item">
+            <div class="message user-online">
+              <img class="author-img" src="/assets/users-image/6.jpg">
+              <div>
+                <h1 class="author-name">John Partel</h1>
+                <span class="message-text">Hello! bro...</span>
+              </div>
+            </div>
+          </li>
+          <li class="mdc-list-item">
+            <div class="message user-online">
+              <img class="author-img" src="/assets/users-image/7.jpg">
+              <div>
+                <h1 class="author-name">John Partel</h1>
+                <span class="message-text">Can you help me?</span>
+              </div>
+            </div>
+          </li>
+          <li class="mdc-list-item">
+            <div class="message user-online">
+              <img class="author-img" src="/assets/users-image/8.jpg">
+              <div>
+                <h1 class="author-name">John Partel</h1>
+                <span class="message-text">What ..?</span>
+              </div>
+            </div>
+          </li>
+          <li class="mdc-list-item">
+            <div class="message user-online">
+              <img class="author-img" src="/assets/users-image/9.jpg">
+              <div>               
+                <h1 class="author-name">John Partel</h1>
+                <span class="message-text">Pari na tao kori ..!</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="bundle.js" async></script>
+  </body>
+</html>
